@@ -163,12 +163,12 @@ class KiwwwiSlider{
             self.touchEndY = e.changedTouches[0].clientY;
             if(self.touchStartX + 50 < self.touchEndX
             // Be sure the swipe wasn't for scrolling up ur down
-            && self.touchStartY + 300 > self.touchEndY && self.touchStartY - 300 < self.touchEndY){
+            && self.touchStartY + 150 > self.touchEndY && self.touchStartY - 150 < self.touchEndY){
                 self.resetTimer(self, self.slideLeft());
             }
             else if(self.touchStartX - 50 > self.touchEndX
             // Be sure the swipe wasn't for scrolling up ur down
-            && self.touchStartY + 300 > self.touchEndY && self.touchStartY - 300 < self.touchEndY){
+            && self.touchStartY + 150 > self.touchEndY && self.touchStartY - 150 < self.touchEndY){
                 self.resetTimer(self, self.slideRight());
             }
         });
