@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/example.css" />
+    </head>
+    <body>
+        <div class="container">
+
+            <h1>Kiwwwi Slider</h1>
+
+            <!-- SLIDER : ELEMENT MUST HAVE AN ID-->
+            <div id="slider">
+                <div class="slide-left"><</div>
+                <div class="slide-right">></div>
+                <!-- EACH SLIDE INSIDE THE SLIDER MUST BE AN <ARTICLE> ELEMENT -->
+                <article>
+                    <!-- YOU CAN PUT WHATEVER YOU WANT INSIDE EACH SLIDE -->
+                    <div>
+                        <h1>Slide 1</h1>
+                        <p>The slide can have some text</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h1>Slide 2</h1>
+                        <p>Or a picture of a cute cat</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h1>Slide 3</h1>
+                        <p>Anything you want really</p>
+                    </div>
+                    <video autoplay loop src="vid/clouds.webm"></video>
+                </article>
+            </div>
+
+        </div>
+
+        <script src="js/kiwwwi-slider.min.js"></script>
+        <script>
+            var newSlider = new KiwwwiSlider(document.querySelectorAll('#slider')[0], 3000, 1);
+        </script>
+
+    </body>
+</html>
